@@ -170,7 +170,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Organizations.cs" />
+    <Compile Include="Models\AgencyContext.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\DbInitializer.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Hotel.cs" />
+    <Compile Include="Models\HotelService.cs" />
+    <Compile Include="Models\Organization.cs" />
+    <Compile Include="Models\Passport.cs" />
+    <Compile Include="Models\Route.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\Tourist.cs" />
+    <Compile Include="Models\Voucher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -198,7 +209,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

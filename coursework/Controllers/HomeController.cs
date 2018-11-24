@@ -1,4 +1,5 @@
-﻿using System;
+﻿using coursework.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,16 @@ namespace coursework.Controllers
 {
     public class HomeController : Controller
     {
+        private AgencyContext _db;
+
+        public HomeController()
+        {
+            _db = new AgencyContext();
+        }
+
         public ActionResult Index()
         {
+            _db.Countries.Add(new Country { Name = "USA" });
             return View();
         }
 
