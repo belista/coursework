@@ -10,11 +10,14 @@ namespace coursework.Models
     {
         #region Fields
         public int Id { get; set; }
-        
+
+        [Display(Name = "Стоимость путевки")]
         public int Cost { get; set; }
-        
+
+        [Display(Name = "Дата начала")]
         public DateTimeOffset Start { get; set; }
-        
+
+        [Display(Name = "Дата окончания")]
         public DateTimeOffset Ending { get; set; }
         #endregion
 

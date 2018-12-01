@@ -11,6 +11,7 @@ namespace coursework.Models
         #region Fields
         public int Id { get; set; }
         
+        [Display(Name = "Название страны")]
         public string Name { get; set; }
         #endregion
 

@@ -11,16 +11,22 @@ namespace coursework.Models
         #region Fields
         public int Id { get; set; }
         
+        [Display(Name = "Город")]
         public string City { get; set; }
         
+        [Display(Name = "Маршрут")]
         public string Itinerary { get; set; }
 
+        [Display(Name = "Описание")]
         public string Description { get; set; }
         
+        [Display(Name = "Стоимость полета")]
         public int CostOfFlight { get; set; }
         
+        [Display(Name = "Комиссия за перевод")]
         public int TransferFee { get; set; }
         
+        [Display(Name = "Длительность")]
         public int Duration { get; set; }
         #endregion
 

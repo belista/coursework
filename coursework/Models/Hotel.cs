@@ -16,12 +16,16 @@ namespace coursework.Models
         #region Fields
         public int Id { get; set; }
         
+        [Display(Name = "Город отеля")]
         public string City { get; set; }
         
+        [Display(Name = "Название отеля")]
         public string Name { get; set; }
 
+        [Display(Name = "Статус")]
         public string Status { get; set; }
         
+        [Display(Name = "Стоимость проживания")]
         public int RoomRate { get; set; }
         #endregion
 

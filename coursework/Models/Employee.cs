@@ -11,16 +11,22 @@ namespace coursework.Models
         #region Fields
         public int Id { get; set; }
         
+        [Display(Name = "Фамилия работника")]
         public string Surname { get; set; }
         
+        [Display(Name = "Имя работника")]
         public string Name { get; set; }
         
+        [Display(Name = "Отчество работника")]
         public string Patronymic { get; set; }
 
+        [Display(Name = "Паспорт")]
         public Passport Passport { get; set; }
 
+        [Display(Name = "Должность")]
         public string Position { get; set; }
 
+        [Display(Name = "Категория")]
         public string Category { get; set; }
         #endregion
 

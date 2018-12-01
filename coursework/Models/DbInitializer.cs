@@ -11,6 +11,8 @@ namespace coursework.Models
         protected override void Seed(AgencyContext context)
         {
             context.Organizations.Add(new Organization { Name = "jjj" });
+            context.Countries.Add(new Country { Name = "USA" });
+            context.SaveChanges();
         }
     }
 }

@@ -16,8 +16,10 @@ namespace coursework.Models
         #region Fields
         public int Id { get; set; }
         
+        [Display(Name = "Название услуги")]
         public string Name { get; set; }
         
+        [Display(Name = "Стоимость услуги")]
         public int Cost { get; set; }
         #endregion
 

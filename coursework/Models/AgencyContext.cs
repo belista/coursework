@@ -10,7 +10,7 @@ namespace coursework.Models
     {
         public AgencyContext() : base("DefaultConnection")
         {
-            Database.SetInitializer(new DbInitializer());
+            //Database.SetInitializer(new DbInitializer());
         }
 
 
