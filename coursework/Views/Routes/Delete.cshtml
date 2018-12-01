@@ -1,0 +1,81 @@
+﻿@model coursework.Models.Route
+
+@{
+    ViewBag.Title = "Удаление";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Удаление</h2>
+
+<h3>Вы уверены что хотите удалить этот элемент?</h3>
+<div>
+    <h4>Маршрут</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Hotel.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hotel.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Itinerary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Itinerary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CostOfFlight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostOfFlight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransferFee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransferFee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад", "Index")
+        </div>
+    }
+</div>
