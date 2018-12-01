@@ -1,0 +1,73 @@
+﻿@model coursework.Models.Voucher
+
+@{
+    ViewBag.Title = "Удаление";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Удаление</h2>
+
+<h3>Вы уверены что хотите удалить этот элемент?</h3>
+<div>
+    <h4>Путевка</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Route.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Route.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tourist.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tourist.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Start)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Start)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ending)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ending)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад", "Index")
+        </div>
+    }
+</div>
